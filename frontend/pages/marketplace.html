@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Mandi | Direct Marketplace</title>
+  <link rel="stylesheet" href="../css/style.css?v=4">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="../index.html">
+      <span class="logo-mark">SM</span>
+      <span>Smart Mandi</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="prices.html">Prices</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="../index.html#ai">AI Advice</a>
+      <a href="../index.html#login">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="marketplace-header">
+      <p class="eyebrow">Direct farmer to buyer trade</p>
+      <h1>Farmers marketplace</h1>
+      <p>Browse verified crop listings and contact sellers without unnecessary commission layers.</p>
+    </section>
+
+    <section class="listing-tools" aria-label="Create crop listing">
+      <form class="listing-form" id="listingForm">
+        <h2>Add crop listing</h2>
+        <label>
+          Crop
+          <input type="text" name="crop" placeholder="Example: Wheat" required>
+        </label>
+        <label>
+          Market
+          <input type="text" name="market" placeholder="Example: Delhi Mandi" required>
+        </label>
+        <label>
+          Price per quintal
+          <input type="number" name="price" placeholder="2250" required>
+        </label>
+        <label>
+          Quantity
+          <input type="number" name="quantity" placeholder="20" required>
+        </label>
+        <label>
+          Seller name
+          <input type="text" name="seller" placeholder="Your name" required>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="Mobile number" required>
+        </label>
+        <button class="btn btn-primary" type="submit">Publish Listing</button>
+        <p class="auth-message" id="listingMessage" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="marketplace-container" id="marketplaceContainer" aria-label="Crop listings">
+      <article class="product-card">
+        <div class="product-card-content">
+          <h3>Loading listings...</h3>
+          <p>Please wait while Smart Mandi connects to the marketplace API.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">Copyright 2026 Smart Mandi | Secure direct marketplace</footer>
+  <script src="../js/marketplace.js"></script>
+</body>
+</html>

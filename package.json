@@ -1,0 +1,17 @@
+{
+  "name": "smart-mandi",
+  "version": "1.0.0",
+  "description": "Smart Mandi farmer-first digital marketplace prototype",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "check": "node --check backend/server.js && node --check frontend/js/main.js && node --check frontend/js/prices.js && node --check frontend/js/marketplace.js"
+  },
+  "keywords": [
+    "mandi",
+    "farmers",
+    "marketplace"
+  ],
+  "author": "",
+  "license": "MIT"
+}

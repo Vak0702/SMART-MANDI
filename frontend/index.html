@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Mandi | Farmer First Digital Market</title>
+  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">SM</span>
+      <span>Smart Mandi</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="pages/prices.html">Prices</a>
+      <a href="pages/marketplace.html">Marketplace</a>
+      <a href="#ai">AI Advice</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Farmer friendly digital mandi</p>
+        <h1>Sell crops with better price visibility and fewer middlemen.</h1>
+        <p class="hero-copy">
+          Smart Mandi helps farmers compare mandi prices, reach verified buyers,
+          track demand, and receive crop suggestions before selling.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pages/prices.html">Check Live Prices</a>
+          <a class="btn btn-secondary" href="#login">Create Account</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Live mandi snapshot">
+        <div class="panel-header">
+          <span>Live Price Snapshot</span>
+          <strong id="heroUpdate">Updating...</strong>
+        </div>
+        <div class="ticker-list" id="homeTicker">
+          <div class="ticker-row">
+            <span>Wheat</span>
+            <strong>Rs. 2,420/qtl</strong>
+            <em class="up">+2.4%</em>
+          </div>
+          <div class="ticker-row">
+            <span>Rice</span>
+            <strong>Rs. 3,180/qtl</strong>
+            <em class="up">+1.2%</em>
+          </div>
+          <div class="ticker-row">
+            <span>Onion</span>
+            <strong>Rs. 1,860/qtl</strong>
+            <em class="down">-0.8%</em>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="quick-stats" aria-label="Platform highlights">
+      <div>
+        <strong>8</strong>
+        <span>Mandis tracked</span>
+      </div>
+      <div>
+        <strong>10+</strong>
+        <span>Major crops</span>
+      </div>
+      <div>
+        <strong>0%</strong>
+        <span>Hidden commission goal</span>
+      </div>
+      <div>
+        <strong>24/7</strong>
+        <span>Price monitoring</span>
+      </div>
+    </section>
+
+    <section class="features" id="platform">
+      <div class="section-heading">
+        <p class="eyebrow">Built for daily farming decisions</p>
+        <h2>One place to price, plan, and trade</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="card">
+          <i class="fas fa-chart-line icon" aria-hidden="true"></i>
+          <h3>Dynamic Mandi Prices</h3>
+          <p>Search, sort, and watch demo prices refresh so farmers can time sales more confidently.</p>
+        </article>
+        <article class="card">
+          <i class="fas fa-user-lock icon" aria-hidden="true"></i>
+          <h3>Login and Signup</h3>
+          <p>Separate farmer and buyer entry points prepare the platform for secure personalised accounts.</p>
+        </article>
+        <article class="card">
+          <i class="fas fa-brain icon" aria-hidden="true"></i>
+          <h3>AI Crop Suggestions</h3>
+          <p>Recommendations consider crop price trend, market demand, season, and storage risk.</p>
+        </article>
+        <article class="card">
+          <i class="fas fa-shield-halved icon" aria-hidden="true"></i>
+          <h3>Safer Trading</h3>
+          <p>Verified buyer cards, contact reveal, and trust indicators reduce blind dealing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-heading">
+        <p class="eyebrow">Market watch</p>
+        <h2>Live mandi prices</h2>
+      </div>
+      <div class="price-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Crop</th>
+              <th>Best Mandi</th>
+              <th>Price</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody id="homePriceTable">
+            <tr>
+              <td>Wheat</td>
+              <td>Delhi Mandi</td>
+              <td>Rs. 2,420/qtl</td>
+              <td><span class="pill up">Sell window</span></td>
+            </tr>
+            <tr>
+              <td>Rice</td>
+              <td>Punjab Mandi</td>
+              <td>Rs. 3,180/qtl</td>
+              <td><span class="pill up">Demand high</span></td>
+            </tr>
+            <tr>
+              <td>Tomato</td>
+              <td>Pune Mandi</td>
+              <td>Rs. 1,540/qtl</td>
+              <td><span class="pill down">Hold if possible</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="ai-section" id="ai">
+      <div class="ai-copy">
+        <p class="eyebrow">Personalised AI suggestions</p>
+        <h2>Crop guidance that speaks like a field assistant.</h2>
+        <p>
+          The AI module can later connect to weather, soil, mandi demand, and
+          farmer history. This prototype shows how guidance can be presented in
+          simple, actionable language.
+        </p>
+      </div>
+      <div class="suggestion-board" id="suggestionBoard">
+        <article>
+          <span class="recommendation-score">92%</span>
+          <h3>Prefer Wheat sale this week</h3>
+          <p>Delhi and Karnal rates are trending upward with steady buyer demand.</p>
+        </article>
+        <article>
+          <span class="recommendation-score">78%</span>
+          <h3>Store Onion for 5-7 days</h3>
+          <p>Short-term dip detected. Better price may return if quality can be preserved.</p>
+        </article>
+      </div>
+      <form class="ai-advice-card" id="aiAdviceForm">
+        <div class="ai-form-heading">
+          <span class="recommendation-score">Ask AI</span>
+          <h3>Get crop advice</h3>
+        </div>
+        <div class="ai-form-grid">
+          <label>
+            Crop
+            <input type="text" name="crop" placeholder="Example: Wheat" required>
+          </label>
+          <label>
+            Location
+            <input type="text" name="location" placeholder="Example: Karnal">
+          </label>
+          <label>
+            Land size
+            <input type="text" name="landSize" placeholder="Example: 2 acres">
+          </label>
+          <label>
+            Season
+            <input type="text" name="season" placeholder="Example: Rabi">
+          </label>
+        </div>
+        <label>
+          Question
+          <textarea name="question" placeholder="Ask about selling time, crop choice, storage, or market risk." required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Generate Advice</button>
+        <div class="ai-answer" id="aiAnswer" aria-live="polite">
+          Enter your crop details to get a local AI recommendation.
+        </div>
+      </form>
+    </section>
+
+    <section class="auth-section" id="login">
+      <div class="auth-copy">
+        <p class="eyebrow">Secure access</p>
+        <h2>Login or create your Smart Mandi account</h2>
+        <p>Use one account to manage listings, compare prices, save crops, and contact verified buyers.</p>
+      </div>
+      <form class="auth-card">
+        <div class="role-tabs" aria-label="Account type">
+          <button type="button" class="active" data-role="farmer">Farmer</button>
+          <button type="button" data-role="buyer">Buyer</button>
+        </div>
+        <label class="signup-field" hidden>
+          Full name
+          <input type="text" name="name" placeholder="Enter full name">
+        </label>
+        <label>
+          Mobile number
+          <input type="tel" name="mobile" placeholder="Enter mobile number" required>
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" placeholder="Enter password" required>
+        </label>
+        <label class="signup-field" hidden>
+          Village or business location
+          <input type="text" name="village" placeholder="Enter village or market">
+        </label>
+        <label class="signup-field" hidden>
+          Crop preference
+          <input type="text" name="cropPreference" placeholder="Example: Wheat">
+        </label>
+        <button class="btn btn-primary" id="authModeButton" type="submit">Login Securely</button>
+        <button class="text-button" id="authSwitch" type="button">New here? Create a farmer or buyer account.</button>
+        <p class="auth-note">Demo login: mobile 9876543210 or 9123456780, password demo123.</p>
+        <p class="auth-message" id="authMessage" aria-live="polite"></p>
+        <div class="user-status" id="userStatus" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright 2026 Smart Mandi | Farmer empowerment platform</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

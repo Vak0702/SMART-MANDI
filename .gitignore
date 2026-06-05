@@ -1,0 +1,5 @@
+node_modules/
+.env
+database/smart-mandi-runtime.json
+server-out.log
+server-err.log
