@@ -96,6 +96,20 @@ If Ollama is not running, Smart Mandi returns a rule-based fallback answer so th
 
 Smart Mandi gives farmers clearer market information, AI-assisted selling guidance, and direct buyer access. It aims to improve price transparency and reduce unnecessary commission layers between farmers and buyers.
 
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Marketplace
+![Marketplace](screenshots/marketplace.png)
+
+### Crop Prices
+![Crop Prices](screenshots/prices.png)
+
+### AI Advisor
+![AI Advisor](screenshots/ai.png)
+
 ## Next Steps
 
 - Replace the JSON file with SQLite, MongoDB, PostgreSQL, or MySQL.
