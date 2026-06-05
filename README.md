@@ -102,7 +102,7 @@ Smart Mandi gives farmers clearer market information, AI-assisted selling guidan
 ![Home Page](screenshots/home.png)
 
 ### Login Section
-![Home Page](screenshots/login.png)
+![Login Page](screenshots/login.png)
 
 ### Marketplace
 ![Marketplace](screenshots/marketplace.png)
